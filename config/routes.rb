@@ -6,6 +6,7 @@ end
  root 'home#index'
 
  resources :home
+ resources :cocaines
  resources :hallucinogens
  resources :amphetamines
  resources :antidepressants
