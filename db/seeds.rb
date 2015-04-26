@@ -157,3 +157,21 @@
 
     amphetamine.save!
 
+    dataAntidepressant = YAML::load_file(File.join(Rails.root,"public/static/antidepressivos.yml"))
+
+    antidepressant = Antidepressant.new
+
+    antidepressant.name = dataAntidepressant["Nome"]
+    antidepressant.origin = dataAntidepressant["Origem"]
+    antidepressant.average_ingest = dataAntidepressant["Quantidade_media_ingerida"]
+    antidepressant.ingestion_form = dataAntidepressant["Forma_ingestao"]
+    antidepressant.effect_average = dataAntidepressant["Efeitos_a_curto_prazo_grandes_quantidades"]
+    antidepressant.effect_high = dataAntidepressant["Risco_de_dependencia_psicologica"]
+    antidepressant.dependence_psychological = dataAntidepressant["Risco_de_dependencia_fisica"]
+    antidepressant.dependence_phisical = dataAntidepressant["Tolerancia"]
+    antidepressant.tolerance = dataAntidepressant["Efeitos_a_longo_prazo"]
+    antidepressant.high_term = dataAntidepressant["Utilizacao_medica"]
+    antidepressant.long_effects = dataAntidepressant["Efeitos_a_longo_prazo"]
+    antidepressant.medical_use = dataAntidepressant["Utilizacao_medica"]
+
+    antidepressant.save!

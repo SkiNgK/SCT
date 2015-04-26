@@ -1,0 +1,2 @@
+module AntidepressantsHelper
+end

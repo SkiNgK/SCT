@@ -40,20 +40,20 @@
    </tr>
 </thead>
 <tbody>
-  <% @cocaines.each do |cocaine| %>
+  <% @antidepressants.each do |antidepressant| %>
   <tr>
-  	<td><%= cocaine.name %></td>
-  	<td><%= cocaine.origin %></td>
-  	<td><%= cocaine.average_ingest %></td>
-  	<td><%= cocaine.ingestion_form %></td>
-  	<td><%= cocaine.effect_average %></td>
-  	<td><%= cocaine.effect_high %></td>
-  	<td><%= cocaine.dependence_psychological %></td>
-  	<td><%= cocaine.dependence_phisical %></td>
-  	<td><%= cocaine.tolerance %></td>
-  	<td><%= cocaine.high_term %></td>
-  	<td><%= cocaine.long_effects %></td>
-  	<td><%= cocaine.medical_use %></td>
+    <td><%= antidepressant.name %></td>
+    <td><%= antidepressant.origin %></td>
+    <td><%= antidepressant.average_ingest %></td>
+    <td><%= antidepressant.ingestion_form %></td>
+    <td><%= antidepressant.effect_average %></td>
+    <td><%= antidepressant.effect_high %></td>
+    <td><%= antidepressant.dependence_psychological %></td>
+    <td><%= antidepressant.dependence_phisical %></td>
+    <td><%= antidepressant.tolerance %></td>
+    <td><%= antidepressant.high_term %></td>
+    <td><%= antidepressant.long_effects %></td>
+    <td><%= antidepressant.medical_use %></td>
   </tr>
  <% end %>
 </tbody>
