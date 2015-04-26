@@ -1,0 +1,61 @@
+<table class="table table-striped">
+ <thead> 
+   <tr>
+     <th>
+       Nome:  	
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:	
+     </th>
+     <th>
+       Forma de ingestão:	
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):	
+     </th>
+     <th>
+       Duração:	
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):	
+     </th>
+     <th>
+       Risco de dependência psicológica:	
+     </th>
+     <th>
+       Risco de dependência física:	
+     </th>
+     <th>
+       Tolerância:	
+     </th>
+     <th>
+       Efeitos a longo prazo:	
+     </th>
+     <th>
+       Utilização médica:	
+     </th>
+   </tr>
+</thead> 
+<tbody>
+  <% @cocaines.each do |cocaine| %>
+  <tr>
+  	<td><%= cocaine.name %></td>
+  	<td><%= cocaine.origin %></td>
+  	<td><%= cocaine.average_ingest %></td>
+  	<td><%= cocaine.ingestion_form %></td>
+  	<td><%= cocaine.effect_average %></td>
+  	<td><%= cocaine.effect_high %></td>
+  	<td><%= cocaine.dependence_psychological %></td>
+  	<td><%= cocaine.dependence_phisical %></td>
+  	<td><%= cocaine.tolerance %></td>
+  	<td><%= cocaine.high_term %></td>
+  	<td><%= cocaine.long_effects %></td>
+  	<td><%= cocaine.medical_use %></td>
+  </tr>	
+ <% end %> 
+</tbody>
+</table>
+ 
