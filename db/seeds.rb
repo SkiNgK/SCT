@@ -194,3 +194,22 @@
     barbiturate.medical_use = dataBarbiturate["Utilizacao_medica"]
 
     barbiturate.save!
+
+    dataCaffeine = YAML::load_file(File.join(Rails.root,"public/static/cafeina.yml"))
+
+    caffeine = Caffeine.new
+
+    caffeine.name = dataCaffeine["Nome"]
+    caffeine.origin = dataCaffeine["Origem"]
+    caffeine.average_ingest = dataCaffeine["Quantidade_media_ingerida"]
+    caffeine.ingestion_form = dataCaffeine["Forma_ingestao"]
+    caffeine.effect_average = dataCaffeine["Efeitos_a_curto_prazo_grandes_quantidades"]
+    caffeine.effect_high = dataCaffeine["Risco_de_dependencia_psicologica"]
+    caffeine.dependence_psychological = dataCaffeine["Risco_de_dependencia_fisica"]
+    caffeine.dependence_phisical = dataCaffeine["Tolerancia"]
+    caffeine.tolerance = dataCaffeine["Efeitos_a_longo_prazo"]
+    caffeine.high_term = dataCaffeine["Utilizacao_medica"]
+    caffeine.long_effects = dataCaffeine["Efeitos_a_longo_prazo"]
+    caffeine.medical_use = dataCaffeine["Utilizacao_medica"]
+
+    caffeine.save!

@@ -1,0 +1,60 @@
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th>
+       Nome:
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:
+     </th>
+     <th>
+       Forma de ingestão:
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):
+     </th>
+     <th>
+       Duração:
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):
+     </th>
+     <th>
+       Risco de dependência psicológica:
+     </th>
+     <th>
+       Risco de dependência física:
+     </th>
+     <th>
+       Tolerância:
+     </th>
+     <th>
+       Efeitos a longo prazo:
+     </th>
+     <th>
+       Utilização médica:
+     </th>
+   </tr>
+</thead>
+<tbody>
+  <% @caffeines.each do |caffeine| %>
+  <tr>
+    <td><%= caffeine.name %></td>
+    <td><%= caffeine.origin %></td>
+    <td><%= caffeine.average_ingest %></td>
+    <td><%= caffeine.ingestion_form %></td>
+    <td><%= caffeine.effect_average %></td>
+    <td><%= caffeine.effect_high %></td>
+    <td><%= caffeine.dependence_psychological %></td>
+    <td><%= caffeine.dependence_phisical %></td>
+    <td><%= caffeine.tolerance %></td>
+    <td><%= caffeine.high_term %></td>
+    <td><%= caffeine.long_effects %></td>
+    <td><%= caffeine.medical_use %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>
