@@ -23,3 +23,22 @@
     cocaine.medical_use = data["Utilizacao_medica"] 
     
     cocaine.save!
+
+    dataNicotine = YAML::load_file(File.join(Rails.root,"public/static/nicotina.yml"))
+
+    nicotine = Nicotine.new
+
+    nicotine.name = dataNicotine["Nome"]
+    nicotine.origin = dataNicotine["Origem"]
+    nicotine.average_ingest = dataNicotine["Quantidade_media_ingerida"]
+    nicotine.ingestion_form = dataNicotine["Forma_ingestao"]
+    nicotine.effect_average = dataNicotine["Efeitos_a_curto_prazo_grandes_quantidades"]
+    nicotine.effect_high = dataNicotine["Risco_de_dependencia_psicologica"]
+    nicotine.dependence_psychological = dataNicotine["Risco_de_dependencia_fisica"]
+    nicotine.dependence_phisical = dataNicotine["Tolerancia"]
+    nicotine.tolerance = dataNicotine["Efeitos_a_longo_prazo"]
+    nicotine.high_term = dataNicotine["Utilizacao_medica"]
+    nicotine.long_effects = dataNicotine["Efeitos_a_longo_prazo"]
+    nicotine.medical_use = dataNicotine["Utilizacao_medica"] 
+    
+    nicotine.save!
