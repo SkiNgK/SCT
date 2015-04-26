@@ -1,0 +1,61 @@
+<table class="table table-striped">
+ <thead> 
+   <tr>
+     <th>
+       Nome:  	
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:	
+     </th>
+     <th>
+       Forma de ingestão:	
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):	
+     </th>
+     <th>
+       Duração:	
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):	
+     </th>
+     <th>
+       Risco de dependência psicológica:	
+     </th>
+     <th>
+       Risco de dependência física:	
+     </th>
+     <th>
+       Tolerância:	
+     </th>
+     <th>
+       Efeitos a longo prazo:	
+     </th>
+     <th>
+       Utilização médica:	
+     </th>
+   </tr>
+</thead> 
+<tbody>
+  <% @narcotics.each do |narcotic| %>
+  <tr>
+  	<td><%= narcotic.name %></td>
+  	<td><%= narcotic.origin %></td>
+  	<td><%= narcotic.average_ingest %></td>
+  	<td><%= narcotic.ingestion_form %></td>
+  	<td><%= narcotic.effect_average %></td>
+  	<td><%= narcotic.effect_high %></td>
+  	<td><%= narcotic.dependence_psychological %></td>
+  	<td><%= narcotic.dependence_phisical %></td>
+  	<td><%= narcotic.tolerance %></td>
+  	<td><%= narcotic.high_term %></td>
+  	<td><%= narcotic.long_effects %></td>
+  	<td><%= narcotic.medical_use %></td>
+  </tr>	
+ <% end %> 
+</tbody>
+</table>
+ 

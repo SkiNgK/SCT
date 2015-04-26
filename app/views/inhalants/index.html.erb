@@ -1,0 +1,61 @@
+<table class="table table-striped">
+ <thead> 
+   <tr>
+     <th>
+       Nome:  	
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:	
+     </th>
+     <th>
+       Forma de ingestão:	
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):	
+     </th>
+     <th>
+       Duração:	
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):	
+     </th>
+     <th>
+       Risco de dependência psicológica:	
+     </th>
+     <th>
+       Risco de dependência física:	
+     </th>
+     <th>
+       Tolerância:	
+     </th>
+     <th>
+       Efeitos a longo prazo:	
+     </th>
+     <th>
+       Utilização médica:	
+     </th>
+   </tr>
+</thead> 
+<tbody>
+  <% @inhalants.each do |inhalant| %>
+  <tr>
+  	<td><%= inhalant.name %></td>
+  	<td><%= inhalant.origin %></td>
+  	<td><%= inhalant.average_ingest %></td>
+  	<td><%= inhalant.ingestion_form %></td>
+  	<td><%= inhalant.effect_average %></td>
+  	<td><%= inhalant.effect_high %></td>
+  	<td><%= inhalant.dependence_psychological %></td>
+  	<td><%= inhalant.dependence_phisical %></td>
+  	<td><%= inhalant.tolerance %></td>
+  	<td><%= inhalant.high_term %></td>
+  	<td><%= inhalant.long_effects %></td>
+  	<td><%= inhalant.medical_use %></td>
+  </tr>	
+ <% end %> 
+</tbody>
+</table>
+ 
