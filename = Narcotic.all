@@ -1,0 +1,133 @@
+[33mcommit a2e4e4d4497de46ac0bdb16f77343a5610423ca1[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sun Apr 26 13:09:20 2015 -0300
+
+    Adicionando informações para o banco seeds
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+
+[33mcommit 115c75429cf0db9c29f00f41df2054c0e82671d1[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sun Apr 26 12:22:28 2015 -0300
+
+    Populando o seeds e exibindo na tela informações sobre Nicotina
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+
+[33mcommit 5d3e119d2d3a931bb5f25f18540e7436416602af[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sun Apr 26 10:31:51 2015 -0300
+
+    Renomeando os arquivos para yml e ajustando as chaves dos hashes em cada arquivo
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+
+[33mcommit 065798466337f199d6d357ed7d7fde0a64001c63[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sat Apr 25 23:02:41 2015 -0300
+
+    Exibindo na view informações sobre a model Cocaine
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+    
+    Signed-off-by: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+
+[33mcommit 54aad19053d672ef20efd0a9e944e7195f2e92bb[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sat Apr 25 22:18:52 2015 -0300
+
+    Ignorando arquivos temporários do Gedit
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+
+[33mcommit a6b8fe7f734dd8e9feb8058072683639826f266d[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sat Apr 25 22:04:09 2015 -0300
+
+    Populando a model Cocaine
+    
+    Signed-off-by: Kleber Brito <kleberbritomoreira10@gmail.com>
+    Signed-off-by: Flavio Costa <skingk.f@gmail.com>
+
+[33mcommit 5b93c4de01450bd30ad5e688053e2564629dcfb8[m
+Author: Flavio Costa <Skingk.f@gmail.com>
+Date:   Sat Apr 25 17:27:23 2015 -0300
+
+    colocando rotas para home
+    
+    Signed-off-by: Flavio Costa <Skingk.f@gmail.com>
+
+[33mcommit 037f93bb939b09cd6499e963d8787e9d80c83611[m
+Author: Flavio Costa <Skingk.f@gmail.com>
+Date:   Sat Apr 25 17:14:09 2015 -0300
+
+    primeiro esquema da home
+    
+    Signed-off-by: Flavio Costa <Skingk.f@gmail.com>
+
+[33mcommit edc024440bc7cc12e965b23b9769603a1ef2c3cc[m
+Merge: f15ff4d 5f2ad17
+Author: Flavio Costa <Skingk.f@gmail.com>
+Date:   Sat Apr 25 17:01:41 2015 -0300
+
+    Merge branch 'info' of https://github.com/kleberbritomoreira10/SCT into devel
+
+[33mcommit f15ff4d8737f889ad97b0e905a5b6a50762a7a17[m
+Merge: 5c13ed3 99b4d10
+Author: Flavio Costa <Skingk.f@gmail.com>
+Date:   Sat Apr 25 16:57:07 2015 -0300
+
+    Merge branch 'master' of https://github.com/ricardogtx/SCT into devel
+
+[33mcommit 5f2ad17fdfa2bab713fce0ef9d33fc69ee210860[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Sat Apr 25 16:55:28 2015 -0300
+
+    Adicionando tabelas para a model Cocaine
+
+[33mcommit 99b4d10d88f876a951773980d5a17ca162f636d1[m
+Merge: 8edb4f9 525a215
+Author: ricardogtx <ricardocdzg@hotmail.com>
+Date:   Fri Apr 24 21:07:35 2015 -0300
+
+    Merge pull request #1 from kleberbritomoreira10/dev
+    
+    Adicionando e configurando gems
+
+[33mcommit 5c13ed3785adc669e4403d088c7fe0f7552eb81c[m
+Merge: 8edb4f9 525a215
+Author: Kleber Brito Moreira <kleberbritomoreira10@users.noreply.github.com>
+Date:   Fri Apr 24 14:07:49 2015 -0300
+
+    Merge pull request #2 from kleberbritomoreira10/devel
+    
+    Adicionando e configurando gems
+
+[33mcommit 525a215c9499db4f27b19b8e1cba7e02c1ee86e6[m
+Author: Kleber Brito Moreira <kleberbritomoreira10@gmail.com>
+Date:   Fri Apr 24 12:37:17 2015 -0300
+
+    Adicionando e configurando gems
+
+[33mcommit 8edb4f96c149144397871de81c95e2b4786fd400[m
+Author: Daniel Henrique <danielhmarinho@gmail.com>
+Date:   Mon Apr 20 13:42:50 2015 -0300
+
+    Parser finishing
+
+[33mcommit c638044d374b16917877de2947166b3079cd0627[m
+Author: Daniel Henrique <danielhmarinho@gmail.com>
+Date:   Sat Apr 11 16:27:06 2015 -0300
+
+    Parser init
+
+[33mcommit 71b84804ceb0a74aa998b46e6882bc3815e85653[m
+Author: ricardogtx <ricardocdzg@hotmail.com>
+Date:   Sat Apr 4 09:27:47 2015 -0300
+
+    Creation of the basic architecture
