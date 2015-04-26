@@ -175,3 +175,22 @@
     antidepressant.medical_use = dataAntidepressant["Utilizacao_medica"]
 
     antidepressant.save!
+
+    dataBarbiturate = YAML::load_file(File.join(Rails.root,"public/static/barbituricos.yml"))
+
+    barbiturate = Barbiturate.new
+
+    barbiturate.name = dataBarbiturate["Nome"]
+    barbiturate.origin = dataBarbiturate["Origem"]
+    barbiturate.average_ingest = dataBarbiturate["Quantidade_media_ingerida"]
+    barbiturate.ingestion_form = dataBarbiturate["Forma_ingestao"]
+    barbiturate.effect_average = dataBarbiturate["Efeitos_a_curto_prazo_grandes_quantidades"]
+    barbiturate.effect_high = dataBarbiturate["Risco_de_dependencia_psicologica"]
+    barbiturate.dependence_psychological = dataBarbiturate["Risco_de_dependencia_fisica"]
+    barbiturate.dependence_phisical = dataBarbiturate["Tolerancia"]
+    barbiturate.tolerance = dataBarbiturate["Efeitos_a_longo_prazo"]
+    barbiturate.high_term = dataBarbiturate["Utilizacao_medica"]
+    barbiturate.long_effects = dataBarbiturate["Efeitos_a_longo_prazo"]
+    barbiturate.medical_use = dataBarbiturate["Utilizacao_medica"]
+
+    barbiturate.save!

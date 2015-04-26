@@ -1,0 +1,60 @@
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th>
+       Nome:
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:
+     </th>
+     <th>
+       Forma de ingestão:
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):
+     </th>
+     <th>
+       Duração:
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):
+     </th>
+     <th>
+       Risco de dependência psicológica:
+     </th>
+     <th>
+       Risco de dependência física:
+     </th>
+     <th>
+       Tolerância:
+     </th>
+     <th>
+       Efeitos a longo prazo:
+     </th>
+     <th>
+       Utilização médica:
+     </th>
+   </tr>
+</thead>
+<tbody>
+  <% @barbiturates.each do |barbiturate| %>
+  <tr>
+    <td><%= barbiturate.name %></td>
+    <td><%= barbiturate.origin %></td>
+    <td><%= barbiturate.average_ingest %></td>
+    <td><%= barbiturate.ingestion_form %></td>
+    <td><%= barbiturate.effect_average %></td>
+    <td><%= barbiturate.effect_high %></td>
+    <td><%= barbiturate.dependence_psychological %></td>
+    <td><%= barbiturate.dependence_phisical %></td>
+    <td><%= barbiturate.tolerance %></td>
+    <td><%= barbiturate.high_term %></td>
+    <td><%= barbiturate.long_effects %></td>
+    <td><%= barbiturate.medical_use %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>
