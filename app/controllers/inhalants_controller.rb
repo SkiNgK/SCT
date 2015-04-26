@@ -1,0 +1,2 @@
+class InhalantsController < ApplicationController
+end

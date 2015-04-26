@@ -42,3 +42,81 @@
     nicotine.medical_use = dataNicotine["Utilizacao_medica"] 
     
     nicotine.save!
+
+    dataAlcohol = YAML::load_file(File.join(Rails.root,"public/static/alcool.yml"))
+
+    alcohol = Alcohol.new
+
+    alcohol.name = dataAlcohol["Nome"]
+    alcohol.origin = dataAlcohol["Origem"]
+    alcohol.average_ingest = dataAlcohol["Quantidade_media_ingerida"]
+    alcohol.ingestion_form = dataAlcohol["Forma_ingestao"]
+    alcohol.effect_average = dataAlcohol["Efeitos_a_curto_prazo_grandes_quantidades"]
+    alcohol.effect_high = dataAlcohol["Risco_de_dependencia_psicologica"]
+    alcohol.dependence_psychological = dataAlcohol["Risco_de_dependencia_fisica"]
+    alcohol.dependence_phisical = dataAlcohol["Tolerancia"]
+    alcohol.tolerance = dataAlcohol["Efeitos_a_longo_prazo"]
+    alcohol.high_term = dataAlcohol["Utilizacao_medica"]
+    alcohol.long_effects = dataAlcohol["Efeitos_a_longo_prazo"]
+    alcohol.medical_use = dataAlcohol["Utilizacao_medica"] 
+    
+    alcohol.save!
+
+    dataInhalant = YAML::load_file(File.join(Rails.root,"public/static/inalantes.yml"))
+
+    inhalant = Inhalant.new
+
+    inhalant.name = dataInhalant["Nome"]
+    inhalant.origin = dataInhalant["Origem"]
+    inhalant.average_ingest = dataInhalant["Quantidade_media_ingerida"]
+    inhalant.ingestion_form = dataInhalant["Forma_ingestao"]
+    inhalant.effect_average = dataInhalant["Efeitos_a_curto_prazo_grandes_quantidades"]
+    inhalant.effect_high = dataInhalant["Risco_de_dependencia_psicologica"]
+    inhalant.dependence_psychological = dataInhalant["Risco_de_dependencia_fisica"]
+    inhalant.dependence_phisical = dataInhalant["Tolerancia"]
+    inhalant.tolerance = dataInhalant["Efeitos_a_longo_prazo"]
+    inhalant.high_term = dataInhalant["Utilizacao_medica"]
+    inhalant.long_effects = dataInhalant["Efeitos_a_longo_prazo"]
+    inhalant.medical_use = dataInhalant["Utilizacao_medica"] 
+    
+    inhalant.save!
+
+    dataNarcotic = YAML::load_file(File.join(Rails.root,"public/static/narcoticos.yml"))
+
+    narcotic = Narcotic.new
+
+    narcotic.name = dataNarcotic["Nome"]
+    narcotic.origin = dataNarcotic["Origem"]
+    narcotic.average_ingest = dataNarcotic["Quantidade_media_ingerida"]
+    narcotic.ingestion_form = dataNarcotic["Forma_ingestao"]
+    narcotic.effect_average = dataNarcotic["Efeitos_a_curto_prazo_grandes_quantidades"]
+    narcotic.effect_high = dataNarcotic["Risco_de_dependencia_psicologica"]
+    narcotic.dependence_psychological = dataNarcotic["Risco_de_dependencia_fisica"]
+    narcotic.dependence_phisical = dataNarcotic["Tolerancia"]
+    narcotic.tolerance = dataNarcotic["Efeitos_a_longo_prazo"]
+    narcotic.high_term = dataNarcotic["Utilizacao_medica"]
+    narcotic.long_effects = dataNarcotic["Efeitos_a_longo_prazo"]
+    narcotic.medical_use = dataNarcotic["Utilizacao_medica"] 
+    
+    narcotic.save!
+
+    dataTranquilizer = YAML::load_file(File.join(Rails.root,"public/static/tranquilizantes.yml"))
+
+    tranquilizer = Tranquilizer.new
+
+    tranquilizer.name = dataTranquilizer["Nome"]
+    tranquilizer.origin = dataTranquilizer["Origem"]
+    tranquilizer.average_ingest = dataTranquilizer["Quantidade_media_ingerida"]
+    tranquilizer.ingestion_form = dataTranquilizer["Forma_ingestao"]
+    tranquilizer.effect_average = dataTranquilizer["Efeitos_a_curto_prazo_grandes_quantidades"]
+    tranquilizer.effect_high = dataTranquilizer["Risco_de_dependencia_psicologica"]
+    tranquilizer.dependence_psychological = dataTranquilizer["Risco_de_dependencia_fisica"]
+    tranquilizer.dependence_phisical = dataTranquilizer["Tolerancia"]
+    tranquilizer.tolerance = dataTranquilizer["Efeitos_a_longo_prazo"]
+    tranquilizer.high_term = dataTranquilizer["Utilizacao_medica"]
+    tranquilizer.long_effects = dataTranquilizer["Efeitos_a_longo_prazo"]
+    tranquilizer.medical_use = dataTranquilizer["Utilizacao_medica"] 
+    
+    tranquilizer.save!
+
+

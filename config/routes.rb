@@ -3,7 +3,7 @@ Rails.application.routes.draw do
  resources :clinics do
    collection {post :import}
 end
- root 'nicotines#index'
+ root 'alcohols#index'
 
  resources :home
 

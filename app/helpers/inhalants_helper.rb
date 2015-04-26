@@ -1,0 +1,2 @@
+module InhalantsHelper
+end

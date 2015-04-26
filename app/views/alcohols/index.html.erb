@@ -1,0 +1,61 @@
+<table class="table table-striped">
+ <thead> 
+   <tr>
+     <th>
+       Nome:  	
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:	
+     </th>
+     <th>
+       Forma de ingestão:	
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):	
+     </th>
+     <th>
+       Duração:	
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):	
+     </th>
+     <th>
+       Risco de dependência psicológica:	
+     </th>
+     <th>
+       Risco de dependência física:	
+     </th>
+     <th>
+       Tolerância:	
+     </th>
+     <th>
+       Efeitos a longo prazo:	
+     </th>
+     <th>
+       Utilização médica:	
+     </th>
+   </tr>
+</thead> 
+<tbody>
+  <% @alcohols.each do |alcohol| %>
+  <tr>
+  	<td><%= alcohol.name %></td>
+  	<td><%= alcohol.origin %></td>
+  	<td><%= alcohol.average_ingest %></td>
+  	<td><%= alcohol.ingestion_form %></td>
+  	<td><%= alcohol.effect_average %></td>
+  	<td><%= alcohol.effect_high %></td>
+  	<td><%= alcohol.dependence_psychological %></td>
+  	<td><%= alcohol.dependence_phisical %></td>
+  	<td><%= alcohol.tolerance %></td>
+  	<td><%= alcohol.high_term %></td>
+  	<td><%= alcohol.long_effects %></td>
+  	<td><%= alcohol.medical_use %></td>
+  </tr>	
+ <% end %> 
+</tbody>
+</table>
+ 
