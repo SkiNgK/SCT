@@ -6,7 +6,8 @@ end
  root 'home#index'
 
  resources :home
- resources :cocaines
+ resources :hallucinogens
+ resources :amphetamines
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

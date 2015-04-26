@@ -138,4 +138,22 @@
 
     hallucinogen.save!
 
+    dataAmphetamine = YAML::load_file(File.join(Rails.root,"public/static/anfetaminas.yml"))
+
+    amphetamine = Amphetamine.new
+
+    amphetamine.name = dataAmphetamine["Nome"]
+    amphetamine.origin = dataAmphetamine["Origem"]
+    amphetamine.average_ingest = dataAmphetamine["Quantidade_media_ingerida"]
+    amphetamine.ingestion_form = dataAmphetamine["Forma_ingestao"]
+    amphetamine.effect_average = dataAmphetamine["Efeitos_a_curto_prazo_grandes_quantidades"]
+    amphetamine.effect_high = dataAmphetamine["Risco_de_dependencia_psicologica"]
+    amphetamine.dependence_psychological = dataAmphetamine["Risco_de_dependencia_fisica"]
+    amphetamine.dependence_phisical = dataAmphetamine["Tolerancia"]
+    amphetamine.tolerance = dataAmphetamine["Efeitos_a_longo_prazo"]
+    amphetamine.high_term = dataAmphetamine["Utilizacao_medica"]
+    amphetamine.long_effects = dataAmphetamine["Efeitos_a_longo_prazo"]
+    amphetamine.medical_use = dataAmphetamine["Utilizacao_medica"]
+
+    amphetamine.save!
 

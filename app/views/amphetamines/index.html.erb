@@ -1,0 +1,60 @@
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th>
+       Nome:
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:
+     </th>
+     <th>
+       Forma de ingestão:
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):
+     </th>
+     <th>
+       Duração:
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):
+     </th>
+     <th>
+       Risco de dependência psicológica:
+     </th>
+     <th>
+       Risco de dependência física:
+     </th>
+     <th>
+       Tolerância:
+     </th>
+     <th>
+       Efeitos a longo prazo:
+     </th>
+     <th>
+       Utilização médica:
+     </th>
+   </tr>
+</thead>
+<tbody>
+  <% @amphetamines.each do |amphetamine| %>
+  <tr>
+    <td><%= amphetamine.name %></td>
+    <td><%= amphetamine.origin %></td>
+    <td><%= amphetamine.average_ingest %></td>
+    <td><%= amphetamine.ingestion_form %></td>
+    <td><%= amphetamine.effect_average %></td>
+    <td><%= amphetamine.effect_high %></td>
+    <td><%= amphetamine.dependence_psychological %></td>
+    <td><%= amphetamine.dependence_phisical %></td>
+    <td><%= amphetamine.tolerance %></td>
+    <td><%= amphetamine.high_term %></td>
+    <td><%= amphetamine.long_effects %></td>
+    <td><%= amphetamine.medical_use %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>
