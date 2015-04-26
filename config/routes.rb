@@ -11,6 +11,7 @@ end
  resources :antidepressants
  resources :barbiturates
  resources :caffeines
+ resources :cannabis_sativas
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,60 @@
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th>
+       Nome:
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:
+     </th>
+     <th>
+       Forma de ingestão:
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):
+     </th>
+     <th>
+       Duração:
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):
+     </th>
+     <th>
+       Risco de dependência psicológica:
+     </th>
+     <th>
+       Risco de dependência física:
+     </th>
+     <th>
+       Tolerância:
+     </th>
+     <th>
+       Efeitos a longo prazo:
+     </th>
+     <th>
+       Utilização médica:
+     </th>
+   </tr>
+</thead>
+<tbody>
+  <% @cannabis_sativas.each do |cannabis_sativa| %>
+  <tr>
+    <td><%= cannabis_sativa.name %></td>
+    <td><%= cannabis_sativa.origin %></td>
+    <td><%= cannabis_sativa.average_ingest %></td>
+    <td><%= cannabis_sativa.ingestion_form %></td>
+    <td><%= cannabis_sativa.effect_average %></td>
+    <td><%= cannabis_sativa.effect_high %></td>
+    <td><%= cannabis_sativa.dependence_psychological %></td>
+    <td><%= cannabis_sativa.dependence_phisical %></td>
+    <td><%= cannabis_sativa.tolerance %></td>
+    <td><%= cannabis_sativa.high_term %></td>
+    <td><%= cannabis_sativa.long_effects %></td>
+    <td><%= cannabis_sativa.medical_use %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>

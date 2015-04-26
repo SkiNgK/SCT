@@ -213,3 +213,22 @@
     caffeine.medical_use = dataCaffeine["Utilizacao_medica"]
 
     caffeine.save!
+
+    dataCannabisSativa = YAML::load_file(File.join(Rails.root,"public/static/Cannabis Sativa.yml"))
+
+    cannabis_sativa = CannabisSativa.new
+
+    cannabis_sativa.name = dataCannabisSativa["Nome"]
+    cannabis_sativa.origin = dataCannabisSativa["Origem"]
+    cannabis_sativa.average_ingest = dataCannabisSativa["Quantidade_media_ingerida"]
+    cannabis_sativa.ingestion_form = dataCannabisSativa["Forma_ingestao"]
+    cannabis_sativa.effect_average = dataCannabisSativa["Efeitos_a_curto_prazo_grandes_quantidades"]
+    cannabis_sativa.effect_high = dataCannabisSativa["Risco_de_dependencia_psicologica"]
+    cannabis_sativa.dependence_psychological = dataCannabisSativa["Risco_de_dependencia_fisica"]
+    cannabis_sativa.dependence_phisical = dataCannabisSativa["Tolerancia"]
+    cannabis_sativa.tolerance = dataCannabisSativa["Efeitos_a_longo_prazo"]
+    cannabis_sativa.high_term = dataCannabisSativa["Utilizacao_medica"]
+    cannabis_sativa.long_effects = dataCannabisSativa["Efeitos_a_longo_prazo"]
+    cannabis_sativa.medical_use = dataCannabisSativa["Utilizacao_medica"]
+
+    cannabis_sativa.save!
