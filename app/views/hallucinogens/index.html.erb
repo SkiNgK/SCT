@@ -1,0 +1,60 @@
+<table class="table table-striped">
+ <thead>
+   <tr>
+     <th>
+       Nome:
+     </th>
+     <th>
+       Origem:
+     </th>
+     <th>
+       Quantidade média ingerida:
+     </th>
+     <th>
+       Forma de ingestão:
+     </th>
+     <th>
+       Efeitos a curto prazo (quantidade média):
+     </th>
+     <th>
+       Duração:
+     </th>
+     <th>
+       Efeitos a curto prazo (grandes quantidades):
+     </th>
+     <th>
+       Risco de dependência psicológica:
+     </th>
+     <th>
+       Risco de dependência física:
+     </th>
+     <th>
+       Tolerância:
+     </th>
+     <th>
+       Efeitos a longo prazo:
+     </th>
+     <th>
+       Utilização médica:
+     </th>
+   </tr>
+</thead>
+<tbody>
+  <% @hallucinogens.each do |hallucinogen| %>
+  <tr>
+    <td><%= hallucinogen.name %></td>
+    <td><%= hallucinogen.origin %></td>
+    <td><%= hallucinogen.average_ingest %></td>
+    <td><%= hallucinogen.ingestion_form %></td>
+    <td><%= hallucinogen.effect_average %></td>
+    <td><%= hallucinogen.effect_high %></td>
+    <td><%= hallucinogen.dependence_psychological %></td>
+    <td><%= hallucinogen.dependence_phisical %></td>
+    <td><%= hallucinogen.tolerance %></td>
+    <td><%= hallucinogen.high_term %></td>
+    <td><%= hallucinogen.long_effects %></td>
+    <td><%= hallucinogen.medical_use %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>

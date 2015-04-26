@@ -3,9 +3,10 @@ Rails.application.routes.draw do
  resources :clinics do
    collection {post :import}
 end
- root 'alcohols#index'
+ root 'home#index'
 
  resources :home
+ resources :cocaines
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

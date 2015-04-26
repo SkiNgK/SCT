@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426152651) do
+ActiveRecord::Schema.define(version: 20150426173904) do
 
   create_table "alcohols", force: :cascade do |t|
     t.string   "name"
@@ -71,7 +71,75 @@ ActiveRecord::Schema.define(version: 20150426152651) do
     t.datetime "updated_at",               null: false
   end
 
+  create_table "hallucinogens", force: :cascade do |t|
+    t.string   "name"
+    t.string   "origin"
+    t.string   "average_ingest"
+    t.string   "ingestion_form"
+    t.string   "effect_average"
+    t.string   "effect_high"
+    t.string   "dependence_psychological"
+    t.string   "dependence_phisical"
+    t.string   "tolerance"
+    t.string   "high_term"
+    t.string   "long_effects"
+    t.string   "medical_use"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "inhalants", force: :cascade do |t|
+    t.string   "name"
+    t.string   "origin"
+    t.string   "average_ingest"
+    t.string   "ingestion_form"
+    t.string   "effect_average"
+    t.string   "effect_high"
+    t.string   "dependence_psychological"
+    t.string   "dependence_phisical"
+    t.string   "tolerance"
+    t.string   "high_term"
+    t.string   "long_effects"
+    t.string   "medical_use"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "narcotics", force: :cascade do |t|
+    t.string   "name"
+    t.string   "origin"
+    t.string   "average_ingest"
+    t.string   "ingestion_form"
+    t.string   "effect_average"
+    t.string   "effect_high"
+    t.string   "dependence_psychological"
+    t.string   "dependence_phisical"
+    t.string   "tolerance"
+    t.string   "high_term"
+    t.string   "long_effects"
+    t.string   "medical_use"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "nicotines", force: :cascade do |t|
+    t.string   "name"
+    t.string   "origin"
+    t.string   "average_ingest"
+    t.string   "ingestion_form"
+    t.string   "effect_average"
+    t.string   "effect_high"
+    t.string   "dependence_psychological"
+    t.string   "dependence_phisical"
+    t.string   "tolerance"
+    t.string   "high_term"
+    t.string   "long_effects"
+    t.string   "medical_use"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "tranquilizers", force: :cascade do |t|
     t.string   "name"
     t.string   "origin"
     t.string   "average_ingest"

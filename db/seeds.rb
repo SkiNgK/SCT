@@ -20,8 +20,8 @@
     cocaine.tolerance = data["Efeitos_a_longo_prazo"]
     cocaine.high_term = data["Utilizacao_medica"]
     cocaine.long_effects = data["Efeitos_a_longo_prazo"]
-    cocaine.medical_use = data["Utilizacao_medica"] 
-    
+    cocaine.medical_use = data["Utilizacao_medica"]
+
     cocaine.save!
 
     dataNicotine = YAML::load_file(File.join(Rails.root,"public/static/nicotina.yml"))
@@ -39,8 +39,8 @@
     nicotine.tolerance = dataNicotine["Efeitos_a_longo_prazo"]
     nicotine.high_term = dataNicotine["Utilizacao_medica"]
     nicotine.long_effects = dataNicotine["Efeitos_a_longo_prazo"]
-    nicotine.medical_use = dataNicotine["Utilizacao_medica"] 
-    
+    nicotine.medical_use = dataNicotine["Utilizacao_medica"]
+
     nicotine.save!
 
     dataAlcohol = YAML::load_file(File.join(Rails.root,"public/static/alcool.yml"))
@@ -58,8 +58,8 @@
     alcohol.tolerance = dataAlcohol["Efeitos_a_longo_prazo"]
     alcohol.high_term = dataAlcohol["Utilizacao_medica"]
     alcohol.long_effects = dataAlcohol["Efeitos_a_longo_prazo"]
-    alcohol.medical_use = dataAlcohol["Utilizacao_medica"] 
-    
+    alcohol.medical_use = dataAlcohol["Utilizacao_medica"]
+
     alcohol.save!
 
     dataInhalant = YAML::load_file(File.join(Rails.root,"public/static/inalantes.yml"))
@@ -77,8 +77,8 @@
     inhalant.tolerance = dataInhalant["Efeitos_a_longo_prazo"]
     inhalant.high_term = dataInhalant["Utilizacao_medica"]
     inhalant.long_effects = dataInhalant["Efeitos_a_longo_prazo"]
-    inhalant.medical_use = dataInhalant["Utilizacao_medica"] 
-    
+    inhalant.medical_use = dataInhalant["Utilizacao_medica"]
+
     inhalant.save!
 
     dataNarcotic = YAML::load_file(File.join(Rails.root,"public/static/narcoticos.yml"))
@@ -96,8 +96,8 @@
     narcotic.tolerance = dataNarcotic["Efeitos_a_longo_prazo"]
     narcotic.high_term = dataNarcotic["Utilizacao_medica"]
     narcotic.long_effects = dataNarcotic["Efeitos_a_longo_prazo"]
-    narcotic.medical_use = dataNarcotic["Utilizacao_medica"] 
-    
+    narcotic.medical_use = dataNarcotic["Utilizacao_medica"]
+
     narcotic.save!
 
     dataTranquilizer = YAML::load_file(File.join(Rails.root,"public/static/tranquilizantes.yml"))
@@ -115,8 +115,27 @@
     tranquilizer.tolerance = dataTranquilizer["Efeitos_a_longo_prazo"]
     tranquilizer.high_term = dataTranquilizer["Utilizacao_medica"]
     tranquilizer.long_effects = dataTranquilizer["Efeitos_a_longo_prazo"]
-    tranquilizer.medical_use = dataTranquilizer["Utilizacao_medica"] 
-    
+    tranquilizer.medical_use = dataTranquilizer["Utilizacao_medica"]
+
     tranquilizer.save!
+
+   dataHallucinogen = YAML::load_file(File.join(Rails.root,"public/static/alucinogenos.yml"))
+
+    hallucinogen = Hallucinogen.new
+
+    hallucinogen.name = dataHallucinogen["Nome"]
+    hallucinogen.origin = dataHallucinogen["Origem"]
+    hallucinogen.average_ingest = dataHallucinogen["Quantidade_media_ingerida"]
+    hallucinogen.ingestion_form = dataHallucinogen["Forma_ingestao"]
+    hallucinogen.effect_average = dataHallucinogen["Efeitos_a_curto_prazo_grandes_quantidades"]
+    hallucinogen.effect_high = dataHallucinogen["Risco_de_dependencia_psicologica"]
+    hallucinogen.dependence_psychological = dataHallucinogen["Risco_de_dependencia_fisica"]
+    hallucinogen.dependence_phisical = dataHallucinogen["Tolerancia"]
+    hallucinogen.tolerance = dataHallucinogen["Efeitos_a_longo_prazo"]
+    hallucinogen.high_term = dataHallucinogen["Utilizacao_medica"]
+    hallucinogen.long_effects = dataHallucinogen["Efeitos_a_longo_prazo"]
+    hallucinogen.medical_use = dataHallucinogen["Utilizacao_medica"]
+
+    hallucinogen.save!
 
 
