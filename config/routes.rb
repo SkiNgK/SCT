@@ -13,6 +13,13 @@ end
  resources :barbiturates
  resources :caffeines
  resources :cannabis_sativas
+ resources :alcohols
+ resources :inhalants
+ resources :narcotics
+ resources :nicotines
+ resources :tranquilizers
+
+ get 'drogas' => 'drogas#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
