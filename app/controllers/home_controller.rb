@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @message = "SISTEMA DE COMUNIDADES TERAPÊUTICAS"
+    @message = "Sistema de comunidades terapêuticas"
   end
 
 end
