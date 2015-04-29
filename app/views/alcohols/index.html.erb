@@ -1,44 +1,45 @@
-<table class="table table-striped">
- <thead> 
-   <tr>
+<h3> QUADRO RESUMO DA DROGA:</h3>
+<table class="table table-bordered">
+ <thead>
+   <tr class="active">
      <th>
-       Nome:  	
+       Nome:
      </th>
      <th>
        Origem:
      </th>
      <th>
-       Quantidade média ingerida:	
+       Quantidade média ingerida:
      </th>
      <th>
-       Forma de ingestão:	
+       Forma de ingestão:
      </th>
      <th>
-       Efeitos a curto prazo (quantidade média):	
+       Efeitos a curto prazo (quantidade média):
      </th>
      <th>
-       Duração:	
+       Duração:
      </th>
      <th>
-       Efeitos a curto prazo (grandes quantidades):	
+       Efeitos a curto prazo (grandes quantidades):
      </th>
      <th>
-       Risco de dependência psicológica:	
+       Risco de dependência psicológica:
      </th>
      <th>
-       Risco de dependência física:	
+       Risco de dependência física:
      </th>
      <th>
-       Tolerância:	
+       Tolerância:
      </th>
      <th>
-       Efeitos a longo prazo:	
+       Efeitos a longo prazo:
      </th>
      <th>
-       Utilização médica:	
+       Utilização médica:
      </th>
    </tr>
-</thead> 
+</thead>
 <tbody>
   <% @alcohols.each do |alcohol| %>
   <tr>
@@ -54,10 +55,9 @@
   	<td><%= alcohol.high_term %></td>
   	<td><%= alcohol.long_effects %></td>
   	<td><%= alcohol.medical_use %></td>
-  </tr>	
- <% end %> 
+  </tr>
+ <% end %>
 </tbody>
 </table>
-<p align="right"><%= link_to "voltar", drogas_path %></p> 
+<p align="right"><%= link_to "voltar", drogas_path %></p>
 <h6>Fonte: Anti Drogas (http://www.antidrogas.com.br/resumo.php)</h6>
- 

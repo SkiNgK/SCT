@@ -6,12 +6,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body background='<%=image_path "text-black-wallpaper.jpg"%>'>
-    <nav id= "main_menu" class="navbar navbar-inverse">
+<body background='<%=image_path "green.jpg"%>'>
+    <nav id= "main_menu" class="navbar navbar-custom">
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/home">
-                    <img id="logo" alt="SCT" src='<%=image_path "sct.jpg"%>'>
+                    <img id="logo" alt="SCT">
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
                     <span class="sr-only">Toggle navigation</span>
@@ -45,7 +45,7 @@
             </div>
         </div>
     </nav>
-<div class="jumbotron">
+<div id="jumbotron_margin" class="jumbotron">
           <div class="container">
             <%= yield %>
             </div>
